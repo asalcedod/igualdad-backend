@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 mongoose
-    .connect(process.env.MONGODB_URL, { useNewUrlParser: true, seUnifiedTopology: true })
+    .connect("mongodb://127.0.0.1:27017/igualdad", { useNewUrlParser: true, seUnifiedTopology: true })
     .catch(e => {
         console.error('Connection error', e.message)
     })
