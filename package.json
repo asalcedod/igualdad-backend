@@ -1,0 +1,32 @@
+{
+  "name": "igualdad-backend",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://asalcedod94@bitbucket.org/mutoestudio/backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mutoestudio/backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.27",
+    "mongoose": "^5.11.16",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.6",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  }
+}
