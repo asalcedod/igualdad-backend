@@ -16,9 +16,7 @@ const route = process.env.URL_LOCAL;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
-  cors({
-    origin: "https://appigualdad.netlify.app",
-  })
+  cors()
 );
 app.use(bodyParser.json());
 
