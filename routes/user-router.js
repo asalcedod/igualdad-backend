@@ -6,7 +6,7 @@ const UserCtrl = require('../controllers/user-ctrl')
 
 const router = express.Router()
 
-router.post('/user', routeSecure, upload.single('imageUrl'), UserCtrl.createUser)
+router.post('/user', upload.single('imageUrl'), UserCtrl.createUser)
 router.put('/user/:id', routeSecure, upload.single('imageUrl'), UserCtrl.updateUser)
 router.delete('/user/:id', routeSecure, UserCtrl.deleteUser)
 router.get('/user/:id', routeSecure, UserCtrl.getUserById)
